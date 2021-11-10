@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 처리</title>
+    <style>
+        body{text-align: center;}
+        .access{color: red; font-size: 1.2em; font-weight: 700;}
+    </style>
+</head>
+<body>
+    <h3>두 수의 합 계산하기 </h3>
+
+    <script>
+        var n1 = prompt("첫번째 수 입력");
+        var n2 = prompt("두번째 수 입력)");
+        var result; 
+
+        // result = n1 + n2; 
+        //  그냥 쓰게 되면 문자 연결 (ex 10 + 11 = 1011 )
+        result = parseFloat(n1) + parseFloat(n2)
+        // parseFloat : 정수로 변경하기 (ex 10 + 11 = 21 )
+
+        document. write ("두 수의 합 : <span class='access'>" + result + "</span>");
+    </script>
+</body>
+</html>
