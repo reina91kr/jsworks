@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문 사용 </title>
+</head>
+<body>
+    <h3> if문 사용하기 </h3>
+    
+    <script>
+        //나이가 15세 이상이면 "관람가" 아니면 "관람불가"
+        //입력(저장)
+        var age = prompt("나이를 입력하세요" ,"16");
+
+        //처리 (계산) - 분기문 작성
+        if(age != null){
+            if(age >= 15){ //비교문
+            document.write("관람가<br>");
+            document.write ("나이는 " + age + "세입니다.");}
+
+            else{
+            document.write("관람불가<br>");
+            document.write ("나이는 " + age + "세입니다.");
+            }
+        }
+        else{
+            document.write("입력이 취소되었습니다.<br>")
+        }
+        
+        
+        //결과 (출력)
+      
+    </script>
+</body>
+</html>

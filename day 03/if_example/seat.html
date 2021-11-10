@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리 배치 프로그램</title>
+</head>
+<body>
+    <h3>자리 배치 프로그램</h3>
+
+    <script>
+        // 입장객 수에 따른 좌석의 줄 수 계산하기 
+        var customerNum = prompt("손님수를 입력하십시오.");
+        var columnNum = prompt("한 줄에 몇명 앉나요?");
+        var rowNum = 0;
+
+        if(customerNum == null || columnNum == null){
+            document.write("입력이 취소되었습니다.");
+        }
+        else{
+            if(customerNum % columnNum == 0){
+            rowNum = customerNum/columnNum;
+            }
+            else{
+            rowNum = parseInt(customerNum / columnNum) + 1;
+            }
+            //parseInt() - 정수로 변환하는 함수
+            document.write(rowNum + "개의 줄이 필요합니다.")
+        }
+
+    </script>
+    
+</body>
+</html>
