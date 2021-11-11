@@ -1,0 +1,16 @@
+#container{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2{color: #00f;}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+table td {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    line-height: 1.5em;
+    text-align: center;
+}

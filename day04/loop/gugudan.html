@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+</head>
+<body>
+    <h3> 구구단 </h3>
+    <script>
+        //for문은 대체로 반복되는 수나 배수, 합계, 평균 등을 위해 사용한다. 
+        var i = 0;
+        var dan = prompt("단을 입력하세요.","2")
+        
+        if(dan == null){
+            document.write("입력이 취소되었습니다.");
+        }
+        else {
+        for(i = 1; i <10; i ++){
+         
+            document.write(dan + " x " + i + " = " + (dan * i) + "<br>");
+            }
+        }  
+    </script>
+</body>
+</html>
