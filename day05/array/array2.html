@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열-Array</title>
+</head>
+<body>
+    <H2>배열 - array </H2>
+
+    <script>
+        var nums = new Array(4);
+        nums[0] = 10;
+        nums[1] = 20;
+        nums[2] = 30;
+        
+        console.log(nums.length + "개");
+
+        nums[1] = 50; 
+
+        // delete nums[3];
+        nums [3] = 40;
+
+        for(var i = 0; i < nums.length; i++){
+            document.write(nums[i] + " ");
+        }
+        document.write("<br><br>");
+        //연산
+        document.write(nums[0] + nums[1]);
+        document.write("<br>");
+        document.write(nums[1] > nums[2]);
+        document.write("<br>");
+        //합계 
+        var sum = 0; 
+        var avg; 
+
+        for(var i = 0; i <nums.length; i++){
+            sum += nums[i];// sum = sum + nums[i]
+        }
+        document.write("합계 : " + sum)
+        // i = 0; sum = 10 = 10
+        // i = 1; sum = 10 + 50; = 60
+        // i = 2; sum = 10 + 50 + 30; = 90 
+        // i = 3: sum = 10 + 50 + 30 + 40; = 130
+        document.write("<br>");
+        //평균
+        avg = sum / nums.length;
+        document.write("평균 : " + avg)
+    </script>
+</body>
+</html>

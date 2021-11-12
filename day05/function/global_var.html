@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수의 유효 범위</title>
+</head>
+<body>
+    <h3>전역변수의 유효 범위</h3>
+
+    <script>
+        //1씩 증가시키는 함수 
+        //전역변수 : 밖에 있는 변수; 지역변수와 전역변수에 모두 적용됨 
+        // 전역변수의 유효 범위 - 전역 공간에서 생성되고 프로그램이 종료되면 메모리에서 삭제됨
+  
+        
+        function oneUp(){
+            x++;
+            return x;
+        }
+
+        var x = 1;
+
+        document.write("x = " + x + "<br>")
+        // ORIGINAL X = 1
+
+        var num = oneUp(); // 2
+        document.write("num = " + num + "<br>")
+
+        // x는 계속 명령어가 하나씩 진행될때마다 하나씩 커진다
+
+        num = oneUp(); // 3
+        document.write("num = " + num + "<br>")
+
+        num = oneUp(); // 4
+        document.write("num = " + num + "<br>")
+
+        num = oneUp(); // 5
+        document.write("num = " + num + "<br>")
+
+        document.write("x = " + x + "<br>")
+        // LAST X = 마지막 X는 5 
+    
+    </script>
+</body>
+</html>
