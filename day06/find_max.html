@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대값 찾기</title>
+</head>
+<body>
+    <h3>최대값 찾기</h3>
+    
+    <script>
+        //숫자를 저장하는 배열 생성 
+        var nums = [17, 33, 25, 92, 56, 8];
+
+        //최대값 구하기 
+        // 원리: 우선 첫번째 숫자를 가장 큰 숫자로 설정하고, 이보다 높은 것으로 연속하여 최대값을 변경하고, 최종적으로 최대값은 숫자를 찾는다. 
+        var maxVal = nums[0];
+        for(var i = 1; i < nums.length; i++){
+            if(maxVal < nums[i]){
+                maxVal = nums[i];
+            }
+        }
+        document.write("최대값 : " + maxVal);
+
+        /* 디버깅 : 
+        i = 1 maxVal = 17 : 17 < 33 >> maxVal = 33 
+        i = 2 maxVal = 33 : 33 > 25 >> maxVal = 33
+        i = 3 maxVal = 33 : 33 < 92 >> maxVal = 92
+        i = 4 maxVal = 92 : 92 > 56 >> maxVal = 92
+        i = 5 maxVal = 92 : 92 > 8 >> maxVal = 92 
+
+        *최종 maxVal = 92 
+        */
+       document.write("<br><br>")
+        var minVal = nums[0];
+        for(var i = 1; i < nums.length; i++){
+            if(minVal > nums[i]){
+                minVal = nums[i]
+            }
+        }
+        document.write("최소값: " + minVal)
+
+        /* 디버깅: 
+        i = 1 minVal = 17 : 17 < 33 >> minVal = 17 
+        i = 2 minVal = 17 : 17 < 25 >> minVal = 17 
+        i = 3 minVal = 17 : 17 < 92 >> minVal = 17 
+        i = 4 minVal = 17 : 17 < 56 >> minVal = 17 
+        i = 5 minVal = 17 : 17 > 8 >> minVal = 8 
+        */ 
+       
+        </script>
+</body>
+</html>
