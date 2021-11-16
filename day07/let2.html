@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let 키워드 사용하기</title>
+</head>
+<body>
+    <h3>let으로 변수 선언하기</h3>
+    <script>
+        let x = 1;
+        if(x === 1){
+            x = x + 1; // 지연변수 
+            console.log("x = " + x);
+        }
+
+       //let x = 10; let사용한 경우 새로운 선언이 불가
+        console.log("x = " + x)
+    </script>
+</body>
+</html>

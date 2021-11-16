@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random() 사용하기</title>
+</head>
+<body>
+    <h3>random() 사용하기</h3>
+
+    <script>
+        //1부터 10까지 중, 무작위 수 호출하기 
+
+        // let num = Math.floor(Math.random()*10 + 1)
+
+        // console.log(num)
+
+
+        //주사위를 10번 던지 
+
+        for(var i = 1; i <= 10; i++){
+            let dice = Math.floor(Math.random()*6 + 1)
+            console.log(i + " = " + dice);
+        }
+
+        
+    </script>
+    
+</body>
+</html>

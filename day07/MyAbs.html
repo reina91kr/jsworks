@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대값 함수 만들기</title>
+</head>
+<body>
+    <h3>절대값 함수 만들기</h3>
+
+    <script>
+        function MyAbs(x){
+            if(x<0)
+                return -x;
+            else
+                return x;
+        }
+        function Mysquare(x){
+            return x * x    
+        }
+        function MyPow(x, y){
+            let num = 1
+            for (let i=0; i < y; i++){
+                num = num * x;
+            }
+            return num;
+        }
+        /* i = 0 (횟수); 1 * 2 = 2
+         i = 1; 2 * 2 = 4;
+         i = 2; 4 * 2 = 8;
+         i = 3; 8 * 2 = 16 */
+
+        console.log(Math.abs(-4)); // 4
+        console.log(MyAbs(-4)); // 4 
+
+        console.log(Mysquare(5))
+
+        console.log(Math.pow(2, 4)); // 2의 4승 = 16
+        console.log(MyPow(2, 4));
+
+    </script>
+</body>
+</html>
